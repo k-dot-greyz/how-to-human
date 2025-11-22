@@ -1,24 +1,35 @@
 # how-to-human
 
-**git gud @life** — An instruction manual for operating your human vessel without kernel panic.
+> git gud @life
 
-The world is a mess. Everything is hard for no good fucking reason. We're operating our vessels without a proper instruction manual. This project documents the lessons learned, forgotten, and re-learned—a basic template for life's amazing and annoying quirks, processes, procedures, and protocols.
+## The Manifesto
 
-## 📖 What This Is
+The world is a mess. Everything is hard for no good fucking reason. If you look around, you see that we technically have everything we could ever want or at least the materials to build what's not already there. Recently I've realized many things, but one of the main ones is that we're operating our vessels without a proper instruction manual. Anyone who has tried to build a LEGO set or a piece of IKEA furniture knows that sometimes it really does pay to RTFM (Read The Fucking Manual). If a shelf needs a booklet with warnings, do's and don't's, a parts list and some assembly and usage diagrams, then how come we as human beings don't have anything resembling that? I guess the closest thing we do have is the insert main text for your belief system here, but that is like going to Hogwarts with only your Physics 101 book in hand. Don't get me wrong, I love physics, but the information is not entirely context appropriate.
 
-This is a living document that frames human existence through tech metaphors: bootloader sequences, signal processing, hardware maintenance, network stacks, version control, and more. Think of it as RTFM for being human—because if a shelf needs a manual, so do we.
+At the same time I look around and see most adults act like kindergartners, and some kindergartners drop wisdom bombs that would go over the heads of states. So if nobody told you, I will: the mods are asleep at the wheel while getting head and sucking you dry at the same time.
 
-## 🚀 Quick Start
+So.
 
-Read the [manifesto](manifesto.md) to understand the philosophy, then dive into [main().md](main().md) for the core modules:
+I figure it would be a waste not to at least attempt documenting the lessons that were learned, forgotten and re-learned many times. My memory has never been my strongest asset, so this is my attempt at getting down the basic template for life's amazing and annoying quirks, processes, procedures and protocols.
 
-- **Module 01**: The Bootloader Sequence — Getting the system online
-- **Module 02**: Signal Flow & Processing — Managing your mind
-- **Module 03**: Hardware Maintenance — Taking care of your body
-- **Module 04**: The Network Stack — Social interaction protocols
-- **Module 05**: The DAW — Creative workflow
-- **Module 06**: Version Control — Habits & learning
-- **Module 07**: The Root Directory — Spirituality & meaning
+---
+
+## Table of Contents
+- [The Core Guide](./The-Core-Guide.md)
+- [Hardware Tuning](./Hardware-Tuning.md)
+- [Identity Protocols](./Identity-Protocols.md)
+- [Input Management](./Input-Management.md)
+- [Regulation Scripts](./Regulation-Scripts.md)
+- [Thermal Regulation](./Thermal-Regulation.md)
+- [Sleep Protocols](./Sleep-Protocols.md)
+
+---
+
+## Quick Start
+- Read The-Core-Guide.md for the full OS-level model.
+- Use Regulation-Scripts.md in emergencies (panic/anxiety).
+- Set up Sleep-Protocols.md tonight; it's the highest ROI patch.
+- Pick one module to implement this week and branch your habit: `git checkout -b new-habit`.
 
 ## 💰 Support This Project
 
@@ -51,7 +62,7 @@ bc1q3rfg8nxtqtmqvqk9yted68j3ny9v3xzlh2tqen
 Eh8yq5CWVVJu5dM73XxQzTnptaRwpKGeXMNqnTKPqqkw
 ```
 
-![SOL QR Code](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAACvklEQVR4nO1bbYqkQAxNRaF/KuwB5ijODfZIwx5pblB1lD5Ag/4csMmS1Me2DlTZCzra5v1wtPJoAo9XJrHGEDwDh0/RAZSfBxbicyg/DyzE51B+HliIz6H8PLAQn0P5Z+CbgBrAteERHF9giLH3DfNZDnyCe2J+R4wewHz0dxPW+oqLr0pCtO/8FwNPyh+iQx2bmOU2hp3Ma97Y2+azFLiY6XF2Plm+/OGtuUtO/sF8SsAi49z8evZsOtmJm1sN0Iw1wbBtPqj8VfRtWFbW0rW3WiSWi+k+w91//j4qfw98JyVyy1XV9ULmgy/vw4WVvfvyedt8FgOXU0/sX/q34N5GtvMI5N6+DE3du7/8Ufl5kG9+WFDuj4h6boh66ZlGbpKkUwo8snvLH5W/RN/Oy5dEZmkBKvLSWrlTfQ/Ih+DL1BqxlmJi8S/ZJphY/XtIPnjdvGFlkxYZRVUKl+hp1fe4+vYVmzjOIkVaaJKx+U71PXR9RXFD5kX/1m1C4AGq73HrK/j2WD34V+urQ/IhvnAfVfVvYuulnb6Y95Y/Kj8P8oaNrW+slaW0okfh1b8Hnl+5thoNNDywGqoR3O8bj6N/sXfv/JGh3SofVP46/q3it3w/vwrlNKQiWv177PnzyK/ZHoKJ4W6IHwmGegyBTfJB5a9TP49pTJVGkyR3aRKt/j3y/CpAauVQREOYOmv9/ELnJzv+YOTRfPH5yenaPvNfDjz5+UmyLKiYuLteop1lbct8FgOXU8/e/wIX0XGgEWeWCbo/vwTf8IFYslw/20FO5STNfySfErDImOLsfKKr7MWxHbbNCHISS/9/4SXOT5rukydZELverr/X0FluhzfJB5W/xvs3oJqc1KHU/+r3/Vc5P0nhb+x/A2iv+aPys8B8+BuUnwcW4nMoPw8sxOdQfh5YiM+h/DzWrq/+AvLyF+aJ0YLpAAAAAElFTkSuQmCC)
+![SOL QR Code](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAXIAAAFyAQAAAADAX2ykAAACvklEQVR4nO1bbYqkQAxNRaF/KuwB5ijODfZIwx5pblB1lD5Ag/4csMmS1Me2DlTZCzra5v1wtPJoAo9XJrHGEDwDh0/RAZSfBxbicyg/DyzE51B+HliIz6H8PLAQn0P5Z+CbgBrAteERHF9giLH3DfNZDnyCe2J+R4wewHz0dxPW+oqLr0pCtO/8FwNPyh+iQx2bmOU2hp3Ma97Y2+azFLiY6XF2Plm+/OGtuUtO/sF8SsAi49z8evZsOtmJm1sN0Iw1wbBtPqj8VfRtWFbW0rW3WiSWi+k+w91//j4qfw98JyVyy1XV9ULmgy/vw4WVvfvyedt8FgOXU0/sX/q34N5GtvMI5N6+DE3du7/8Ufl5kG9+WFDuj4h6boh66ZlGbpKkUwo8snvLH5W/RN/Oy5dEZmkBKvLSWrlTfQ/Ih+DL1BqxlmJi8S/ZJphY/XtIPnjdvGFlkxYZRVUKl+hp1fe4+vYVmzjOIkVaaJKx+U71PXR9RXFD5kX/1m1C4AGq73HrK/j2WD34V+urQ/IhvnAfVfVvYuulnb6Y95Y/Kj8P8oaNrW+slaW0okfh1b8Hnl+5thoNNDywGqoR3O8bj6N/sXfv/JGh3SofVP46/q3it3w/vwrlNKQiWv177PnzyK/ZHoKJ4W6IHwmGegyBTfJB5a9TP49pTJVGkyR3aRKt/j3y/CpAauVQREOYOmv9/ELnJzv+YOTRfPH5yenaPvNfDjz5+UmyLKiYuLteop1lbct8FgOXU8/e/wIX0XGgEWeWCbo/vwTf8IFYslw/20FO5STNfySfErDImOLsfKKr7MWxHbbNCHISS/9/4SXOT5rukydZELverr/X0FluhzfJB5W/xvs3oJqc1KHU/+r3/Vc5P0nhb+x/A2iv+aPys8B8+BuUnwcW4nMoPw8sxOdQfh5YiM+h/DzWrq/+AlDLOKl2jaeJAAAAAElFTkSuQmCC)
 
 ### 🎯 Donation Tips
 
@@ -73,3 +84,11 @@ Eh8yq5CWVVJu5dM73XxQzTnptaRwpKGeXMNqnTKPqqkw
 **Thank you for supporting how-to-human!** 🙏
 
 🔗 **Project**: [how-to-human](https://github.com/k-dot-greyz/how-to-human)
+
+## Contributing
+
+PRs that improve clarity, add practical scripts, or fix broken metaphors are welcome. Keep the tone direct, useful, and minimally preachy. Structure long additions as modules and link them in the TOC.
+
+## License
+
+GPL-3.0
