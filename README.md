@@ -1,60 +1,38 @@
-# Neuro-Spicy DevKit 🌶️🧠
+# how-to-human
 
-> A collection of tools, patterns, and practices for the neurodivergent developer
+> git gud @life
 
-## What's Inside?
+## The Manifesto
 
-### 🧠 PromptOS - Persona Management System
-**The flagship component of the DevKit.** A simple, file-based system for managing AI personas that transform your LLM into specialized experts. Whether you need a pragmatic engineer for system design or a skilled technical writer for documentation, PromptOS has you covered.
+The world is a mess. Everything is hard for no good fucking reason. If you look around, you see that we technically have everything we could ever want or at least the materials to build what's not already there. Recently I've realized many things, but one of the main ones is that we're operating our vessels without a proper instruction manual. Anyone who has tried to build a LEGO set or a piece of IKEA furniture knows that sometimes it really does pay to RTFM (Read The Fucking Manual). If a shelf needs a booklet with warnings, do's and don't's, a parts list and some assembly and usage diagrams, then how come we as human beings don't have anything resembling that? I guess the closest thing we do have is the insert main text for your belief system here, but that is like going to Hogwarts with only your Physics 101 book in hand. Don't get me wrong, I love physics, but the information is not entirely context appropriate.
 
-- **Location**: [`/promptos`](./promptos)
-- **Quick Start**: Copy a persona from `/promptos/system_prompts/` and paste into your LLM
-- **Highlights**: 
-  - Pre-built expert personas (engineer, writer, and more)
-  - Template for creating custom personas
-  - Version-controllable and shareable
-  - Zero configuration required
+At the same time I look around and see most adults act like kindergartners, and some kindergartners drop wisdom bombs that would go over the heads of states. So if nobody told you, I will: the mods are asleep at the wheel while getting head and sucking you dry at the same time.
 
-[→ Explore PromptOS](./promptos)
+So.
 
-### 📝 Documentation Templates
-*Coming soon*
-
-### 🔧 Development Workflows  
-*Coming soon*
-
-### 🎯 Focus Tools
-*Coming soon*
-
-## Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/yourusername/neuro-spicy-devkit.git
-
-# Navigate to PromptOS
-cd neuro-spicy-devkit/promptos
-
-# Read the guide
-cat README.md
-
-# Try your first persona
-cat system_prompts/01_pragmatic_engineer.md
-# Copy the output and paste into your LLM of choice
-```
-
-## Philosophy
-
-This toolkit is built on the belief that neurodivergent traits—hyperfocus, pattern recognition, systems thinking, and unique perspectives—are superpowers in software development. The tools here are designed to amplify these strengths while providing structure where it's helpful.
-
-## Contributing
-
-We welcome contributions from the community! Whether it's a new PromptOS persona, a workflow that works for you, or improvements to existing tools, we'd love to see it.
-
-## License
-
-Open source and available under the MIT License. Use it, modify it, share it—make it yours.
+I figure it would be a waste not to at least attempt documenting the lessons that were learned, forgotten and re-learned many times. My memory has never been my strongest asset, so this is my attempt at getting down the basic template for life's amazing and annoying quirks, processes, procedures and protocols.
 
 ---
 
-*Built by and for the beautifully chaotic minds that make technology human.*
+## Table of Contents
+- [The Core Guide](./The-Core-Guide.md)
+- [Hardware Tuning](./Hardware-Tuning.md)
+- [Identity Protocols](./Identity-Protocols.md)
+- [Input Management](./Input-Management.md)
+- [Regulation Scripts](./Regulation-Scripts.md)
+- [Thermal Regulation](./Thermal-Regulation.md)
+- [Sleep Protocols](./Sleep-Protocols.md)
+
+---
+
+## Quick Start
+- Read The-Core-Guide.md for the full OS-level model.
+- Use Regulation-Scripts.md in emergencies (panic/anxiety).
+- Set up Sleep-Protocols.md tonight; it’s the highest ROI patch.
+- Pick one module to implement this week and branch your habit: `git checkout -b new-habit`.
+
+## Contributing
+PRs that improve clarity, add practical scripts, or fix broken metaphors are welcome. Keep the tone direct, useful, and minimally preachy. Structure long additions as modules and link them in the TOC.
+
+## License
+GPL-3.0
