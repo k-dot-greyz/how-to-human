@@ -22,6 +22,7 @@ I figure it would be a waste not to at least attempt documenting the lessons tha
 - [Regulation Scripts](./Regulation-Scripts.md)
 - [Thermal Regulation](./Thermal-Regulation.md)
 - [Sleep Protocols](./Sleep-Protocols.md)
+- [Map Not Territory](./Map-Not-Territory.md)
 
 ---
 
