@@ -15,6 +15,7 @@
 - [Regulation Scripts](#regulation-scripts)
 - [Thermal Regulation](#thermal-regulation)
 - [Sleep Protocols](#sleep-protocols)
+- [Map Not Territory](#map-not-territory)
 
 ## **The Manifesto**
 
@@ -113,3 +114,6 @@ See: [Thermal-Regulation.md](Thermal-Regulation.md)
 
 ## **Sleep Protocols**
 See: [Sleep-Protocols.md](Sleep-Protocols.md)
+
+## **Map Not Territory**
+See: [Map-Not-Territory.md](Map-Not-Territory.md)
