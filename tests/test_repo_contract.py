@@ -51,8 +51,21 @@ def _read(rel: str) -> str:
     return (ROOT / rel).read_text(encoding="utf-8")
 
 
-def _unlabeled_fences(text: str) -> list[str]:
-    return re.findall(r"^```[ \t]*$", text, re.MULTILINE)
+def _unlabeled_opening_fences(text: str) -> list[int]:
+    """Return 1-based line numbers of opening fences with no language hint."""
+    unlabeled: list[int] = []
+    in_fence = False
+    for index, line in enumerate(text.splitlines(), 1):
+        if not line.startswith("```"):
+            continue
+        if in_fence:
+            in_fence = False
+            continue
+        lang = line[3:].strip()
+        if not lang:
+            unlabeled.append(index)
+        in_fence = True
+    return unlabeled
 
 
 class TestCanonicalLayout(unittest.TestCase):
@@ -96,7 +109,7 @@ class TestReadmeIsFrontDoor(unittest.TestCase):
     def test_visual_banner_referenced(self) -> None:
         self.assertRegex(
             self.readme,
-            r"!\[.+\]\(assets/.+\.(png|svg|webp)\)|<img [^>]+src=\"assets/.+\.(png|svg|webp)\"",
+            r"!\[.+\]\(assets/.+\.(png|svg|webp)\)|<img [^>]*src=\"assets/.+\.(png|svg|webp)\"",
         )
         banners = list((ROOT / "assets").rglob("*.png")) + list(
             (ROOT / "assets").rglob("*.svg")
@@ -129,7 +142,7 @@ class TestReadmeIsFrontDoor(unittest.TestCase):
         self.assertIn("manifesto.md", self.readme)
 
     def test_fenced_code_has_language(self) -> None:
-        self.assertEqual(_unlabeled_fences(self.readme), [])
+        self.assertEqual(_unlabeled_opening_fences(self.readme), [])
 
     def test_does_not_paste_full_manifesto(self) -> None:
         self.assertNotIn("Hogwarts with only your Physics 101", self.readme)
@@ -158,7 +171,7 @@ class TestDonateSurface(unittest.TestCase):
         self.assertRegex(self.funding, r"donate")
 
     def test_donate_fences_labeled(self) -> None:
-        self.assertEqual(_unlabeled_fences(self.donate), [])
+        self.assertEqual(_unlabeled_opening_fences(self.donate), [])
 
 
 class TestNoPhantomDevkitTest(unittest.TestCase):
@@ -218,7 +231,7 @@ class TestProfileProposal(unittest.TestCase):
         self.assertGreater(len(first_line), 20)
 
     def test_profile_fences_labeled(self) -> None:
-        self.assertEqual(_unlabeled_fences(self.profile), [])
+        self.assertEqual(_unlabeled_opening_fences(self.profile), [])
 
 
 if __name__ == "__main__":
