@@ -1,38 +1,70 @@
+<p align="center">
+  <img src="assets/banners/how-to-human-banner.png" alt="how-to-human — torn instruction-manual page meeting a terminal boot log. git gud @life." width="100%" />
+</p>
+
 # how-to-human
 
 > git gud @life
 
-## The Manifesto
+The universe shipped you without an instruction manual. This is a patch. Firmware for a human OS — bootloader, panic scripts, sleep configs, and the rest of the RTFM you were supposed to get in kindergarten.
 
-The world is a mess. Everything is hard for no good fucking reason. If you look around, you see that we technically have everything we could ever want or at least the materials to build what's not already there. Recently I've realized many things, but one of the main ones is that we're operating our vessels without a proper instruction manual. Anyone who has tried to build a LEGO set or a piece of IKEA furniture knows that sometimes it really does pay to RTFM (Read The Fucking Manual). If a shelf needs a booklet with warnings, do's and don't's, a parts list and some assembly and usage diagrams, then how come we as human beings don't have anything resembling that? I guess the closest thing we do have is the insert main text for your belief system here, but that is like going to Hogwarts with only your Physics 101 book in hand. Don't get me wrong, I love physics, but the information is not entirely context appropriate.
-
-At the same time I look around and see most adults act like kindergartners, and some kindergartners drop wisdom bombs that would go over the heads of states. So if nobody told you, I will: the mods are asleep at the wheel while getting head and sucking you dry at the same time.
-
-So.
-
-I figure it would be a waste not to at least attempt documenting the lessons that were learned, forgotten and re-learned many times. My memory has never been my strongest asset, so this is my attempt at getting down the basic template for life's amazing and annoying quirks, processes, procedures and protocols.
-
----
-
-## Table of Contents
-- [The Core Guide](./The-Core-Guide.md)
-- [Hardware Tuning](./Hardware-Tuning.md)
-- [Identity Protocols](./Identity-Protocols.md)
-- [Input Management](./Input-Management.md)
-- [Regulation Scripts](./Regulation-Scripts.md)
-- [Thermal Regulation](./Thermal-Regulation.md)
-- [Sleep Protocols](./Sleep-Protocols.md)
-
----
+```text
+$ ./boot --human
+[ok] hydration
+[ok] photons
+[ok] one definite move
+[warn] phone skipped on purpose
+```
 
 ## Quick Start
-- Read The-Core-Guide.md for the full OS-level model.
-- Use Regulation-Scripts.md in emergencies (panic/anxiety).
-- Set up Sleep-Protocols.md tonight; it’s the highest ROI patch.
-- Pick one module to implement this week and branch your habit: `git checkout -b new-habit`.
+
+1. Tonight: [lib/body/sleep-protocols.md](lib/body/sleep-protocols.md) — highest ROI patch.
+2. In an emergency: [lib/mind/regulation-scripts.md](lib/mind/regulation-scripts.md) — panic / anxiety.
+3. Tomorrow morning: [main().md](main().md) — 15-minute bootloader, one `main()` for the day.
+4. When you have bandwidth: [docs/core-guide.md](docs/core-guide.md) — full OS model.
+5. Why this exists: [manifesto.md](manifesto.md).
+6. Pick one module. Branch the habit: `git checkout -b new-habit`.
+
+## Library
+
+| Module | Path |
+|--------|------|
+| Core guide (Modules 01–07) | [docs/core-guide.md](docs/core-guide.md) |
+| Daily bootloader | [main().md](main().md) |
+| Sleep | [lib/body/sleep-protocols.md](lib/body/sleep-protocols.md) |
+| Thermal | [lib/body/thermal-regulation.md](lib/body/thermal-regulation.md) |
+| Hardware tuning | [lib/body/hardware-tuning.md](lib/body/hardware-tuning.md) |
+| Regulation (panic) | [lib/mind/regulation-scripts.md](lib/mind/regulation-scripts.md) |
+| Input management | [lib/mind/input-management.md](lib/mind/input-management.md) |
+| Identity | [lib/social/identity-protocols.md](lib/social/identity-protocols.md) |
 
 ## Contributing
-PRs that improve clarity, add practical scripts, or fix broken metaphors are welcome. Keep the tone direct, useful, and minimally preachy. Structure long additions as modules and link them in the TOC.
+
+PRs that improve clarity, add practical scripts, or fix broken metaphors are welcome. Keep the tone direct, useful, and minimally preachy. Structure long additions as modules under `lib/` and link them here.
+
+GreyZ GitHub profile overhaul (copy into `k-dot-greyz/k-dot-greyz`): [docs/profile/README.md](docs/profile/README.md).
 
 ## License
+
 GPL-3.0
+
+<details>
+<summary>⚡ fuel the firmware</summary>
+
+If this saved you a kernel panic, you can throw coins at the kettle. Full notes: [docs/donate.md](docs/donate.md).
+
+**BTC**
+
+```text
+bc1q3rfg8nxtqtmqvqk9yted68j3ny9v3xzlh2tqen
+```
+
+**SOL**
+
+```text
+Eh8yq5CWVVJu5dM73XxQzTnptaRwpKGeXMNqnTKPqqkw
+```
+
+ETH is not listed until there is a real address. Send a small test first if the amount is large.
+
+</details>
